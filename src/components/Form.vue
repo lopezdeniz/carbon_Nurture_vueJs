@@ -34,7 +34,8 @@
           required
         ></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Send</button>
+      <button type="submit" class="btn btn-primary custom-btn">Send</button>
+
     </form>
 
     <div v-if="responseMessage" :class="{ 'text-success': isSuccess, 'text-danger': !isSuccess }" class="mt-3">
@@ -100,4 +101,22 @@ export default {
 .text-danger {
   color: #dc3545; /* Цвет для сообщения об ошибке */
 }
+
+.custom-btn {
+  background-color: #0b75cd; /* Set the background color */
+  border-color: #0b75cd; /* Set the border color */
+  color: white; /* Text color */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #085a9c; /* Slightly darker shade for hover */
+  border-color: #085a9c;
+  color: white;
+}
+
 </style>

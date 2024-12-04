@@ -189,12 +189,12 @@
     border: 1px solid #ced4da;
   }
   .subscribe-form .form-control.submit {
-    background: #007bff;
+    background: #0B75CD;
     color: #fff;
     border: none;
   }
   .subscribe-form .form-control.submit:hover {
-    background: #0056b3;
+    background: #64b1ef;
   }
   .text-success {
     color: #28a745;
