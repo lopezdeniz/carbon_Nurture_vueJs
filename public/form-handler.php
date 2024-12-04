@@ -47,7 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'misterleandr@gmail.com'; // Gmail аккаунт
-        $mail->Password = 'txxlieywhsvqmnlm';       // Пароль приложения Gmail
+        $encryptedPassword = 'dHh4bGlleXdoc3ZxbW5sbQ==%'; // Зашифрованный пароль
+        $mail->Password = base64_decode($encryptedPassword); // Расшифровка пароля
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
