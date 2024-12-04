@@ -1,0 +1,17 @@
+{
+    "name": "lopez/carbon-nurture",
+    "autoload": {
+        "psr-4": {
+            "Lopez\\CarbonNurture\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mrLopez",
+            "email": "lopesdenis@mail.ru"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
