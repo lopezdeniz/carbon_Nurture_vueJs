@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #00BFB2;"> <!-- Header Color -->
       <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand text-uppercase" href="#">Carbon Nurture</a>
+        <router-link class="navbar-brand text-uppercase" to="/">Carbon Nurture</router-link>
         <!-- Toggle Button for Mobile -->
         <button
           class="navbar-toggler"
@@ -20,23 +20,23 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <router-link class="nav-link" :class="{ active: isActive('/') }" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <router-link class="nav-link" :class="{ active: isActive('/about') }" to="/about">About</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
+              <router-link class="nav-link" :class="{ active: isActive('/products') }" to="/products">Products</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Technology</a>
+              <router-link class="nav-link" :class="{ active: isActive('/technology') }" to="/technology">Technology</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <router-link class="nav-link" :class="{ active: isActive('/contact') }" to="/contact">Contact</router-link>
             </li>
           </ul>
           <!-- CTA Button -->
-          <a href="#" class="btn btn-primary">Purchase Now</a>
+          <router-link class="btn btn-primary" to="/purchase">Purchase Now</router-link>
         </div>
       </div>
     </nav>
@@ -46,6 +46,11 @@
 <script>
 export default {
   name: "PageHeader",
+  methods: {
+    isActive(path) {
+      return this.$route.path === path; // Проверяем, является ли текущий маршрут активным
+    },
+  },
 };
 </script>
 
@@ -68,6 +73,10 @@ export default {
 }
 .nav-link:hover {
   color: #0B6E4F; /* Hover Color */
+}
+.nav-link.active {
+  font-weight: bold;
+  color: #000000; /* Active Color */
 }
 
 /* Button Styles */

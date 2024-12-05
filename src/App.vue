@@ -2,7 +2,7 @@
   <div id="app">
     <PageHeader />
     <main>
-      <ContactForm />
+      <router-view /> <!-- Слот для маршрутов -->
     </main>
     <AppFooter />
   </div>
@@ -10,14 +10,12 @@
 
 <script>
 import PageHeader from "./components/Header.vue";
-import ContactForm from "./components/Form.vue";
 import AppFooter from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     PageHeader,
-    ContactForm,
     AppFooter,
   },
 };
