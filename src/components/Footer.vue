@@ -4,31 +4,40 @@
         <div class="row">
           <div class="col-md-6">
             <div class="row">
-              <div class="col-md-4 mb-md-0 mb-4">
-                <h2 class="footer-heading">Link</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="py-1 d-block">Link</a></li>
-                  <li><a href="#" class="py-1 d-block">Link</a></li>
-                  <li><a href="#" class="py-1 d-block">Link</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4 mb-md-0 mb-4">
-                <h2 class="footer-heading">Link</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="py-1 d-block">Link</a></li>
-                  <li><a href="#" class="py-1 d-block">Link</a></li>
-                  <li><a href="#" class="py-1 d-block">Link</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4 mb-md-0 mb-4">
-                <h2 class="footer-heading">Link</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="py-1 d-block">Link</a></li>
-                  <li><a href="#" class="py-1 d-block">Link</a></li>
-                  <li><a href="#" class="py-1 d-block">Link</a></li>
-                </ul>
-              </div>
-            </div>
+  <div class="col-md-3 mb-md-0 mb-4">
+    <h2 class="footer-heading">Shop</h2>
+    <ul class="list-unstyled">
+      <li><a href="/shop" class="py-1 d-block">Products</a></li>
+      <li><a href="/shop" class="py-1 d-block">Categories</a></li>
+      <li><a href="/shop" class="py-1 d-block">Special Offers</a></li>
+    </ul>
+  </div>
+  <div class="col-md-3 mb-md-0 mb-4">
+    <h2 class="footer-heading">About</h2>
+    <ul class="list-unstyled">
+      <li><a href="/about" class="py-1 d-block">Our Story</a></li>
+      <li><a href="/about" class="py-1 d-block">Team</a></li>
+      <li><a href="/about" class="py-1 d-block">Careers</a></li>
+    </ul>
+  </div>
+  <div class="col-md-3 mb-md-0 mb-4">
+    <h2 class="footer-heading">Legal</h2>
+    <ul class="list-unstyled">
+      <li><a href="/legal" class="py-1 d-block">Terms & Conditions</a></li>
+      <li><a href="/legal" class="py-1 d-block">Privacy Policy</a></li>
+      <li><a href="/legal" class="py-1 d-block">Refund Policy</a></li>
+    </ul>
+  </div>
+  <div class="col-md-3 mb-md-0 mb-4">
+    <h2 class="footer-heading">FAQ</h2>
+    <ul class="list-unstyled">
+      <li><a href="/faq" class="py-1 d-block">General Questions</a></li>
+      <li><a href="/faq" class="py-1 d-block">Shipping Info</a></li>
+      <li><a href="/faq" class="py-1 d-block">Support</a></li>
+    </ul>
+  </div>
+</div>
+
           </div>
           <div class="col-md-6">
             <div class="row justify-content-end">
