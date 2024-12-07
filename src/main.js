@@ -3,6 +3,9 @@ import App from "./App.vue";
 import router from "./router"; // Подключение маршрутизатора
 import "aos/dist/aos.css"; // Подключение стилей AOS
 import AOS from "aos"; // Импорт AOS
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 
 const app = createApp(App);
 

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/Home.vue";
 import ContactPage from "../views/Contact.vue";
-import AboutPage from "../views/About.vue"; // Example additional pages
+import AboutPage from "../views/About.vue"; 
 import ProductsPage from "../views/Products.vue";
 import TechnologyPage from "../views/Technology.vue";
 import PurchasePage from "../views/Purchase.vue";
