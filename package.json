@@ -8,10 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vueuse/head": "^2.0.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
+    "vue-meta": "^3.0.0-alpha.2",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
