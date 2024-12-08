@@ -7,8 +7,8 @@
         v-for="(packageData, index) in packages"
         :key="index"
         class="col-md-4"
-        data-aos="fade-up"
-        :data-aos-delay="100 * index"
+        style="transition: transform 0.3s ease; animation: fadeInUp 0.8s ease-in-out;"
+        :style="{ animationDelay: `${0.1 * index}s` }"
       >
         <div
           class="card h-100 position-relative shadow-hover"
@@ -43,15 +43,14 @@
 </template>
 
 <script>
-import { useHead } from "@vueuse/head"; // Импорт useHead
-import AOS from "aos";
+import { useHead } from "@vueuse/head";
 
 export default {
   name: "PricingSection",
   setup() {
     // Метатеги для страницы
     useHead({
-      title: "Pricing - Carbon Nurture", // Уникальный заголовок страницы
+      title: "Pricing - Carbon Nurture",
       meta: [
         {
           name: "description",
@@ -59,7 +58,7 @@ export default {
         },
         {
           name: "keywords",
-          content: "ключевое_слово1, ключевое_слово2, ключевое_слово3", // Добавьте ключевые слова
+          content: "ключевое_слово1, ключевое_слово2, ключевое_слово3",
         },
         {
           property: "og:title",
@@ -71,11 +70,11 @@ export default {
         },
         {
           property: "og:image",
-          content: "https://example.com/og-image-pricing.jpg", // Укажите URL изображения
+          content: "https://example.com/og-image-pricing.jpg",
         },
         {
           property: "og:url",
-          content: "https://example.com/pricing", // Уникальный URL страницы
+          content: "https://example.com/pricing",
         },
       ],
     });
@@ -107,23 +106,26 @@ export default {
       ],
     };
   },
-  mounted() {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: true,
-    });
-  },
 };
 </script>
 
 <style scoped>
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #pricing {
   background-color: #ffffff;
   padding: 3rem 0;
 }
 
-/* Card Styling */
 .card {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -138,7 +140,6 @@ export default {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Glow Effect */
 .glow {
   position: absolute;
   top: 0;
@@ -156,7 +157,6 @@ export default {
   opacity: 1;
 }
 
-/* Button */
 .btn-glow {
   position: relative;
   overflow: hidden;
@@ -179,7 +179,6 @@ export default {
   width: 100%;
 }
 
-/* Recommended Card */
 .recommended-card {
   transform: translateY(-17px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -193,7 +192,6 @@ export default {
   border-bottom: 1px solid #dee2e6;
 }
 
-/* Typography */
 .card-title {
   font-size: 1.25rem;
   margin-bottom: 1rem;
